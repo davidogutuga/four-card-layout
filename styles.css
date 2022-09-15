@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    background-color: hsl(0, 0%, 98%)
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.heading {
+    color:hsl(229, 6%, 66%);
+    text-align: center;
+    font-size: 1.6rem;
+}
+.heading-2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+#text {
+    text-align: center;
+    font-size: 0.9rem;
+    color:hsl(229, 6%, 66%);
+}
+div {
+    background-color: white;
+    height: 15rem;
+    width:20rem;
+    padding: 1.5rem;
+    border-radius: 5px 5px;
+    box-shadow: 1px 6px 10px hsl(229, 6%, 66%) ;
+    transition:0.4s
+}
+header {
+    width:40%;
+    margin: auto;
+}
+.parent {
+    margin: auto;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+div p {
+    font-size: 0.9rem;
+    color:hsl(229, 6%, 66%);
+}
+.content-1{
+    border-top: 3px solid hsl(180, 62%, 55%);
+    margin-top: 8.5rem;
+    margin-right: 1rem;
+}
+.content-2{
+    border-top: 3px solid red;
+    margin-bottom: 1rem;
+}
+.content-3{
+    border-top: 3px solid hsl(34, 97%, 64%);
+    margin-top: 1rem;
+}
+.content-4{
+    border-top: 2px solid hsl(212, 86%, 64%);
+    margin-top: 8.5rem;
+    margin-left: 1rem;
+}
+img {
+    margin-top:3rem;
+    float :right
+}
+img:hover {
+    filter: opacity(0.6);
+}
+div:hover {
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 768px){
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5.5rem;
+    }
+    div {
+        width: 100%;
+        height: auto;
+    }
+    .parent {
+        padding: 1rem;
+    }
+    .content-4{
+        margin-left: -0.1rem;
+        margin-top: -0.1rem;
+    }
+    .content-1 {
+        margin-bottom: 1rem;
+    }
+    .content-3{
+        margin-top: -0.1rem;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        width: 100%;
+        padding: 1rem;
+    }
+    .heading,.heading-2{
+        font-size: 1.3rem;
+    }
+    #text {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+}
